@@ -1,5 +1,5 @@
 .intro {
-  height: 85vh;
+  height: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -47,6 +47,7 @@
 .computers {
   height: 150px;
   margin-bottom: -5px;
+  margin-top: 50px;
 }
 
 @keyframes wave-animation {
