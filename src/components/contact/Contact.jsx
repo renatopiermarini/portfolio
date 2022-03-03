@@ -5,7 +5,7 @@ export const Contact = () => {
     e.preventDefault();
   };
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-div">
         <h2>Send me an email</h2>
         <form className="form" onSubmit={handleSubmit}>
@@ -25,7 +25,7 @@ export const Contact = () => {
         </form>
       </div>
 
-      <a>Back to top</a>
+      <a href="#top">Back to top</a>
       <p>Developed by me.</p>
     </section>
   );

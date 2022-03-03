@@ -8,7 +8,7 @@ import { Contact } from "../components/contact/Contact";
 
 export const Home = () => {
   return (
-    <main>
+    <main id="home">
       <Navbar />
       <Intro />
       <AboutMeSkills />

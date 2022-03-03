@@ -12,18 +12,30 @@ export const Socials = () => {
         <p>Feel free to send me a message, I'm always open to new ideas.</p>
       </div>
       <div className="social-buttons">
-        <button className="social-btn">
+        <a
+          className="social-btn"
+          href="https://twitter.com/PiermariniRena"
+          target="_blank"
+        >
           <img className="social-img twitter" src={twitter} />
-        </button>
-        <button className="social-btn">
+        </a>
+        <a className="social-btn">
           <img className="social-img linkedin" src={linkedin} />
-        </button>
-        <button className="social-btn">
+        </a>
+        <a
+          className="social-btn"
+          target="_blank"
+          href="https://github.com/renatopiermarini?tab=repositories"
+        >
           <img className="social-img github" src={github} />
-        </button>
-        <button className="social-btn">
+        </a>
+        <a
+          className="social-btn"
+          target="_blank"
+          href="https://wa.me/542494605138"
+        >
           <img className="social-img whatsapp" src={whatsapp} />
-        </button>
+        </a>
       </div>
     </section>
   );

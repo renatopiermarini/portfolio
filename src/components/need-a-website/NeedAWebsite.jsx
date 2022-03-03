@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./need-a-website.css";
 
 export const NeedAWebsite = () => {
@@ -8,7 +9,7 @@ export const NeedAWebsite = () => {
 
         <p>Interested in working together? We should queue up a chat.</p>
 
-        <button>Let's do this</button>
+        <NavLink to="/work-with-me">Let's do this</NavLink>
       </div>
     </section>
   );

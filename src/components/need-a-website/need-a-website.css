@@ -34,7 +34,8 @@
   line-height: 1.8;
 }
 
-.need-div button {
+.need-div a {
+  text-decoration: none;
   margin-bottom: 5px;
   padding: 0.6em 1.3em;
   font-size: 18px;
@@ -44,7 +45,7 @@
   border-radius: 50px;
 }
 
-.need-div button:active {
+.need-div a:active {
   background-color: #7510f7;
   border: 2px solid #7510f7;
 }
@@ -64,11 +65,12 @@
     font-size: 22px;
   }
 
-  .need-div button {
+  .need-div a {
     font-size: 20px;
+    cursor: pointer;
   }
 
-  .need-div button:hover {
+  .need-div a:hover {
     background-color: #7510f7;
     border: 2px solid #7510f7;
   }

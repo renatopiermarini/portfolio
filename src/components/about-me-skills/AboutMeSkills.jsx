@@ -64,7 +64,7 @@ export const AboutMeSkills = () => {
           </div>
         </div>
       </div>
-      <button className="download-cv">DOWNLOAD CV</button>
+      <a className="download-cv">DOWNLOAD CV</a>
     </section>
   );
 };

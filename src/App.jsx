@@ -1,13 +1,11 @@
-import { Home } from "./containers/Home"
-
+import { AppRouter } from "./routers/AppRouter";
 
 function App() {
-  
   return (
     <div>
-      <Home/>
+      <AppRouter />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

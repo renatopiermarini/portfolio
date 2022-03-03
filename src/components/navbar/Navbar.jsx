@@ -1,13 +1,18 @@
-import './navbar.css'
-import logo from '../pictures/logo.jpeg'
+import "./navbar.css";
+import logo from "../pictures/logo.jpeg";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar">
-        <div className="navbar-div">
+    <nav className="navbar" id="top">
+      <div className="navbar-div">
+        <NavLink to="/">
           <img src={logo} className="logo" />
-          <a className="say-hello">Say Hello</a>
-        </div>
-      </nav>
-  )
-}
+        </NavLink>
+        <a className="say-hello" href="#contact">
+          Say Hello
+        </a>
+      </div>
+    </nav>
+  );
+};
