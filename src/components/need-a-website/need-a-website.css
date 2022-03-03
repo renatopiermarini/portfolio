@@ -1,0 +1,75 @@
+.need-section {
+  background-color: #7510f7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  overflow-y: visible;
+}
+
+.need-div {
+  background-color: #171c28;
+  color: white;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  margin-bottom: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.need-div h1 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.need-div p {
+  width: 70%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.need-div button {
+  margin-bottom: 5px;
+  padding: 0.6em 1.3em;
+  font-size: 18px;
+  background-color: #171c28;
+  border: 2px solid #7510f7;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.need-div button:active {
+  background-color: #7510f7;
+  border: 2px solid #7510f7;
+}
+
+@media screen and (min-width: 1024px) {
+  .need-div {
+    width: 70%;
+    height: 300px;
+    margin-bottom: 180px;
+  }
+
+  .need-div h1 {
+    font-size: 30px;
+  }
+
+  .need-div p {
+    font-size: 22px;
+  }
+
+  .need-div button {
+    font-size: 20px;
+  }
+
+  .need-div button:hover {
+    background-color: #7510f7;
+    border: 2px solid #7510f7;
+  }
+}
