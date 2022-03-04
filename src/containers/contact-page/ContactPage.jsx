@@ -22,14 +22,13 @@ export const ContactPage = () => {
         swal({
           text: "Consulta enviada correctamente",
           icon: "success",
-          timer: "2000",
         });
         setLoading(false);
       })
       .catch((err) =>
         swal({
           text: "Ha ocurrido un error",
-          icon: "danger",
+          icon: "warning",
           timer: "2000",
         })
       );

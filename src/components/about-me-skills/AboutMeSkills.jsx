@@ -9,8 +9,16 @@ import reactjs from "../pictures/skills/reactjs.png";
 import git from "../pictures/skills/git.png";
 import firebase from "../pictures/skills/firebase.png";
 import npm from "../pictures/skills/npm.png";
+import swal from "sweetalert";
 
 export const AboutMeSkills = () => {
+  const showCv = () => {
+    swal({
+      text: "I don't have my cv updated. I will upload it as soon as posible. Sorry for the inconvenience",
+      icon: "warning",
+    });
+  };
+
   return (
     <section className="purple-background">
       <div className="about-me">
@@ -64,7 +72,9 @@ export const AboutMeSkills = () => {
           </div>
         </div>
       </div>
-      <a className="download-cv">DOWNLOAD CV</a>
+      <a className="download-cv" onClick={showCv}>
+        DOWNLOAD CV
+      </a>
     </section>
   );
 };

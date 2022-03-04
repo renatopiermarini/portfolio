@@ -95,6 +95,7 @@
   margin-top: 30px;
   border: 2px solid white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .download-cv:active {
