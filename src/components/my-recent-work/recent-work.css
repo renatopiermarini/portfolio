@@ -44,6 +44,10 @@ import giphy from "./pictures/giphy.jpeg"; */
   flex-direction: column;
 }
 
+.project p {
+  opacity: 0;
+}
+
 .project-div {
   display: flex;
   flex-direction: column;
@@ -63,12 +67,48 @@ import giphy from "./pictures/giphy.jpeg"; */
 .project {
   width: 350px;
   height: 180px;
-  background-color: dimgrey;
+  cursor: pointer;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
-  /* border: 1px solid #7510f7; */
   margin-top: 5px;
+  background-color: #171c28;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.project p {
+  opacity: 0;
+}
+
+.project-active {
+  background-color: #171c28;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
+  height: 180px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  margin-top: 5px;
+  transition: all 300ms ease;
+}
+
+.project-active p {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.8;
+  transition: all 300ms ease;
 }
 
 .visit-code {
@@ -131,10 +171,47 @@ import giphy from "./pictures/giphy.jpeg"; */
     margin-right: 20px;
     margin-left: 20px;
     transition: all 300ms ease;
+    background-color: #171c28;
+    color: white;
+  }
+
+  .project-active {
+    height: 200px;
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 300ms ease;
+  }
+
+  .project-active:hover {
+    transform: scale(1.05);
   }
 
   .project:hover {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     transform: scale(1.05);
+  }
+
+  .project p {
+    opacity: 0;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.8;
+    transition: all 300ms ease;
+  }
+
+  .project:hover p {
+    opacity: 1;
   }
 
   .visit-code {

@@ -1,8 +1,35 @@
 import "./recent-work.css";
 import visit from "./pictures/open.png";
 import github from "./pictures/github.png";
+import { useState } from "react";
 
 export const RecentWork = () => {
+  const [isActiveInmo, setIsactiveInmo] = useState(false);
+  const [isActiveConst, setIsactiveConst] = useState(false);
+  const [isActiveJournal, setIsactiveJournal] = useState(false);
+  const [isActiveHeros, setIsactiveHeros] = useState(false);
+  const [isActiveGiphy, setIsactiveGiphy] = useState(false);
+
+  const toggleClassInmo = () => {
+    setIsactiveInmo(!isActiveInmo);
+  };
+
+  const toggleClassConst = () => {
+    setIsactiveConst(!isActiveConst);
+  };
+
+  const toggleClassJournal = () => {
+    setIsactiveJournal(!isActiveJournal);
+  };
+
+  const toggleClassHeros = () => {
+    setIsactiveHeros(!isActiveHeros);
+  };
+
+  const toggleClassGiphy = () => {
+    setIsactiveGiphy(!isActiveGiphy);
+  };
+
   return (
     <section className="projects-section">
       <div className="projects-text-div">
@@ -13,12 +40,20 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Real Estate Website</label>
           <span />
-          <a
-            href="https://www.inmobiliariamarinatortarolo.com/"
-            target="_blank"
+          <div
+            className={
+              !isActiveInmo ? "project inmobiliaria" : "project-active"
+            }
+            onClick={toggleClassInmo}
           >
-            <div className="project inmobiliaria"></div>
-          </a>
+            <p>
+              This was created for a client with React. <br /> I designed it and
+              coded it entirely. <br />
+              It has Firebase authentication and a Dashbord to upload new houses
+              easily by completing a form.
+            </p>
+          </div>
+
           <div className="visit-code">
             <a
               href="https://www.inmobiliariamarinatortarolo.com/"
@@ -37,12 +72,19 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Construction Company Website</label>
           <span />
-          <a
-            href="https://renatopiermarini.github.io/senderos-construcciones/"
-            target="_blank"
+
+          <div
+            className={!isActiveConst ? "project senderos" : "project-active"}
+            onClick={toggleClassConst}
           >
-            <div className="project senderos"></div>
-          </a>
+            <p>
+              This was created for a client, he wanted a simple website with a
+              contact form. <br /> The client is taking pictures so I can finish
+              it and send it to production. <br />
+              Made with Javascript.
+            </p>
+          </div>
+
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/senderos-construcciones/"
@@ -61,12 +103,17 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Journal App</label>
           <span />
-          <a
-            href="https://renatopiermarini.github.io/react-journal-app/"
-            target="_blank"
+
+          <div
+            className={!isActiveJournal ? "project journal" : "project-active"}
+            onClick={toggleClassJournal}
           >
-            <div className="project journal"></div>
-          </a>
+            <p>
+              This is a Journal App. It has Firebase Authentication and Redux.
+              It's made to keep private notes.
+            </p>
+          </div>
+
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/react-journal-app/"
@@ -85,9 +132,14 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Hero App</label>
           <span />
-          <a href="https://react-hero-app.vercel.app/" target="_blank">
-            <div className="project heros"></div>
-          </a>
+
+          <div
+            className={!isActiveHeros ? "project heros" : "project-active"}
+            onClick={toggleClassHeros}
+          >
+            <p>Fun project I made to learn react-router-dom.</p>
+          </div>
+
           <div className="visit-code">
             <a href="https://react-hero-app.vercel.app/" target="_blank">
               <img src={visit} />
@@ -103,12 +155,17 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Giphy Expert App</label>
           <span />
-          <a
-            href="https://renatopiermarini.github.io/gif-expert-app/"
-            target="_blank"
+
+          <div
+            className={!isActiveGiphy ? "project giphy" : "project-active"}
+            onClick={toggleClassGiphy}
           >
-            <div className="project giphy"></div>
-          </a>
+            <p>
+              This was one of my first projects. I was learning how to work with
+              APIS. It's really simple but still a fun work to share.
+            </p>
+          </div>
+
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/gif-expert-app/"
