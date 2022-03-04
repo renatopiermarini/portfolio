@@ -9,7 +9,6 @@ export const Socials = () => {
     swal({
       text: "I'm working on my Linkedin profile. I will upload it as soon as posible. Sorry for the inconvenience",
       icon: "warning",
-      timer: "2000",
     });
   };
 
