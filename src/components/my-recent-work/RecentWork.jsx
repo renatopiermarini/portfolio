@@ -13,7 +13,12 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Real Estate Website</label>
           <span />
-          <div className="project inmobiliaria"></div>
+          <a
+            href="https://www.inmobiliariamarinatortarolo.com/"
+            target="_blank"
+          >
+            <div className="project inmobiliaria"></div>
+          </a>
           <div className="visit-code">
             <a
               href="https://www.inmobiliariamarinatortarolo.com/"
@@ -32,7 +37,12 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Construction Company Website</label>
           <span />
-          <div className="project senderos"></div>
+          <a
+            href="https://renatopiermarini.github.io/senderos-construcciones/"
+            target="_blank"
+          >
+            <div className="project senderos"></div>
+          </a>
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/senderos-construcciones/"
@@ -51,7 +61,12 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Journal App</label>
           <span />
-          <div className="project journal"></div>
+          <a
+            href="https://renatopiermarini.github.io/react-journal-app/"
+            target="_blank"
+          >
+            <div className="project journal"></div>
+          </a>
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/react-journal-app/"
@@ -70,7 +85,9 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Hero App</label>
           <span />
-          <div className="project heros"></div>
+          <a href="https://react-hero-app.vercel.app/" target="_blank">
+            <div className="project heros"></div>
+          </a>
           <div className="visit-code">
             <a href="https://react-hero-app.vercel.app/" target="_blank">
               <img src={visit} />
@@ -86,7 +103,12 @@ export const RecentWork = () => {
         <div className="project-div">
           <label>Giphy Expert App</label>
           <span />
-          <div className="project giphy"></div>
+          <a
+            href="https://renatopiermarini.github.io/gif-expert-app/"
+            target="_blank"
+          >
+            <div className="project giphy"></div>
+          </a>
           <div className="visit-code">
             <a
               href="https://renatopiermarini.github.io/gif-expert-app/"
