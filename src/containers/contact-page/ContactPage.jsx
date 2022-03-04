@@ -1,10 +1,38 @@
+import { useState } from "react";
+import swal from "sweetalert";
 import { Navbar } from "../../components/navbar/Navbar";
 import avatar from "../../components/pictures/avatar.svg";
 import "./contact-page.css";
+import emailjs from "@emailjs/browser";
 
 export const ContactPage = () => {
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
+    emailjs
+      .sendForm(
+        "service_2c306ne",
+        "template_oxa0dpt",
+        e.target,
+        "D1JDIzUSAqTNrAy1a"
+      )
+      .then((res) => {
+        swal({
+          text: "Consulta enviada correctamente",
+          icon: "success",
+          timer: "2000",
+        });
+        setLoading(false);
+      })
+      .catch((err) =>
+        swal({
+          text: "Ha ocurrido un error",
+          icon: "danger",
+          timer: "2000",
+        })
+      );
   };
 
   return (
@@ -22,17 +50,19 @@ export const ContactPage = () => {
           <form className="form-project-contact" onSubmit={handleSubmit}>
             <div className="contact-page-input-div">
               <label>Name</label>
-              <input type="text" autoComplete="none" />
+              <input type="text" autoComplete="off" name="name" />
             </div>
             <div className="contact-page-input-div">
               <label>Email</label>
-              <input type="email" autoComplete="none" />
+              <input type="email" autoComplete="none" name="email" />
             </div>
             <div className="contact-page-input-div">
               <label>Additional details</label>
-              <textarea />
+              <textarea name="message" />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={loading}>
+              Submit
+            </button>
           </form>
         </div>
       </section>
