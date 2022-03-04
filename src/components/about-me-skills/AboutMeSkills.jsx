@@ -24,10 +24,15 @@ export const AboutMeSkills = () => {
       <div className="about-me">
         <h2>About me</h2>
         <p>
-          I'm a passionate Front-end Developer and I love coding beautifully
-          simple things. I'm a passionate Front-end Developer and I love coding
-          beautifully simple things. I'm a passionate Front-end Developer and I
-          love coding beautifully simple things.
+          I'm a 22 years old Front-end Developer and entrepeneur from Argentina.
+          I started my journey in 2019 moving to Spain where I learned
+          everything about ecommerce and Facebook ads. I explored several niches
+          with multiple ecommerce websites made on Shopify but I slowly realized
+          how much I enjoyed coding things from scratch by myself without using
+          platforms like Shopify. A year later I decided to learn programming
+          and dedicate my life to bring ideas to life in the browser. I'm
+          confident, naturally curious, and perpetually working on improving my
+          coding skills one problem at a time.
         </p>
       </div>
       <div className="skills">
