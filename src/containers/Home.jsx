@@ -5,8 +5,10 @@ import { RecentWork } from "../components/my-recent-work/RecentWork";
 import { NeedAWebsite } from "../components/need-a-website/NeedAWebsite";
 import { Socials } from "../components/socials/Socials";
 import { Contact } from "../components/contact/Contact";
+import smoothscroll from "smoothscroll-polyfill";
 
 export const Home = () => {
+  smoothscroll.polyfill();
   return (
     <main id="home">
       <Navbar />
