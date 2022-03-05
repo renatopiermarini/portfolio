@@ -1,6 +1,6 @@
 .purple-background {
   height: auto;
-  background-color: #7510f7;
+  background-color: #171c28;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +85,7 @@
 
 .download-cv {
   background-color: white;
-  color: #7510f7;
+  color: #171c28;
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -99,7 +99,7 @@
 }
 
 .download-cv:active {
-  background-color: #7510f7;
+  background-color: #171c28;
   color: white;
   border: 2px solid white;
 }
@@ -148,7 +148,7 @@
   }
 
   .download-cv:hover {
-    background-color: #7510f7;
+    background-color: #171c28;
     color: white;
     border: 2px solid white;
   }

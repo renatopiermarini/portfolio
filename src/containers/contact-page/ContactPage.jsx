@@ -1,7 +1,7 @@
 import { useState } from "react";
 import swal from "sweetalert";
 import { Navbar } from "../../components/navbar/Navbar";
-import avatar from "../../components/pictures/avatar.svg";
+
 import "./contact-page.css";
 import emailjs from "@emailjs/browser";
 
@@ -38,9 +38,6 @@ export const ContactPage = () => {
     <>
       <Navbar />
       <section className="contact-page-section">
-        <div className="avatar-div">
-          <img src={avatar} />
-        </div>
         <div className="form-div">
           <h2>
             I’m excited to learn about your project. Complete the form and I

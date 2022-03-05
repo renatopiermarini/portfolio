@@ -7,9 +7,9 @@ export const NeedAWebsite = () => {
       <div className="need-div">
         <h1>Start a project</h1>
 
-        <p>Interested in working together? We should queue up a chat.</p>
+        <p>Looking for a new website?</p>
 
-        <NavLink to="/work-with-me">Let's do this</NavLink>
+        <NavLink to="/work-with-me">Send message</NavLink>
       </div>
     </section>
   );

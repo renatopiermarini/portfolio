@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7510f7;
+  background-color: #171c28;
 }
 
 .contact-div {
@@ -37,14 +37,14 @@
   width: 60%;
   margin-top: 40px;
   background-color: white;
-  border: 2px solid #7510f7;
-  color: #7510f7;
+  border: 2px solid #171c28;
+  color: #171c28;
   border-radius: 50px;
   font-size: 17px;
 }
 
 .form button:active {
-  background-color: #7510f7;
+  background-color: #171c28;
   border: 2px solid white;
   color: white;
 }
@@ -137,7 +137,7 @@
   }
 
   .form button:hover {
-    background-color: #7510f7;
+    background-color: #171c28;
     color: white;
   }
 
@@ -151,6 +151,6 @@
 
   .contact-section a:hover {
     background-color: rgb(194, 194, 194);
-    color: #7510f7;
+    color: #171c28;
   }
 }

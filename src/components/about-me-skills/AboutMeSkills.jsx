@@ -29,7 +29,6 @@ export const AboutMeSkills = () => {
         </p>
       </div>
       <div className="skills">
-        <img src={frontend} className="frontend-img" />
         <h2>Skills</h2>
         <div className="skills-pictures-div">
           <div className="skill-div">

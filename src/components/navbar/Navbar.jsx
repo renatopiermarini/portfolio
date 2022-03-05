@@ -14,7 +14,7 @@ export const Navbar = () => {
         </NavLink>
         {location.pathname === "/" ? (
           <a className="say-hello" href="#contact">
-            Say Hello
+            Contact
           </a>
         ) : (
           <NavLink className="say-hello" to="/">

@@ -1,5 +1,5 @@
 .socials-section {
-  background-color: #7510f7;
+  background-color: #171c28;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 }
 
 .social-btn {
-  background-color: #7510f7;
+  background-color: #171c28;
   border-radius: 50%;
   border: 2px solid white;
   height: 50px;
