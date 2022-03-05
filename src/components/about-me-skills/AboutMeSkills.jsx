@@ -30,7 +30,7 @@ export const AboutMeSkills = () => {
           with multiple ecommerce websites made on Shopify but I slowly realized
           how much I enjoyed coding things from scratch by myself without using
           platforms like Shopify. A year later I decided to learn programming
-          and dedicate my life to bring ideas to life in the browser. I'm
+          and dedicate my life to bringing ideas to life in the browser. I'm
           confident, naturally curious, and perpetually working on improving my
           coding skills one problem at a time.
         </p>
