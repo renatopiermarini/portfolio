@@ -115,10 +115,7 @@ export const RecentWork = () => {
           </div>
 
           <div className="visit-code">
-            <a
-              href="https://renatopiermarini.github.io/react-journal-app/"
-              target="_blank"
-            >
+            <a href="https://react-journal-app-six.vercel.app" target="_blank">
               <img src={visit} />
             </a>
             <a
