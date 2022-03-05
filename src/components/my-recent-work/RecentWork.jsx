@@ -35,6 +35,9 @@ export const RecentWork = () => {
       <div className="projects-text-div">
         <h2>Projects</h2>
         <p>Here are a few projects I've worked on recently.</p>
+        <label className="click-to">
+          Click the images to see descriptions.
+        </label>
       </div>
       <div className="projects">
         <div className="project-div">

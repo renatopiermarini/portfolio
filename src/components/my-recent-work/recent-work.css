@@ -64,6 +64,11 @@ import giphy from "./pictures/giphy.jpeg"; */
   margin-top: 10px;
 }
 
+.click-to {
+  color: grey;
+  font-size: 13px;
+}
+
 .project {
   width: 350px;
   height: 180px;
@@ -152,6 +157,11 @@ import giphy from "./pictures/giphy.jpeg"; */
 @media screen and (min-width: 1024px) {
   .projects-text-div h2 {
     font-size: 30px;
+  }
+
+  .click-to {
+    color: grey;
+    font-size: 15px;
   }
 
   .projects-text-div p {
