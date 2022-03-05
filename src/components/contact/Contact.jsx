@@ -56,7 +56,6 @@ export const Contact = () => {
       </div>
 
       <a href="#top">Back to top</a>
-      <p>Developed by me.</p>
     </section>
   );
 };
