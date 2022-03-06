@@ -36,7 +36,6 @@ import giphy from "./pictures/giphy.jpeg"; */
 }
 
 .projects {
-  margin-bottom: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
