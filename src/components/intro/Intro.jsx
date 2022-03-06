@@ -1,6 +1,6 @@
 import "./intro.css";
 import wave from "../pictures/waving.png";
-import devices from "../pictures/devices.jpg";
+import devices from "../pictures/devices.png";
 
 export const Intro = () => {
   return (
