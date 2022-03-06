@@ -43,7 +43,8 @@
 
 .need-div a:active {
   background-color: #171c28;
-  border: 2px solid #171c28;
+  border: 2px solid #fe4e5f;
+  color: #fe4e5f;
 }
 
 @media screen and (min-width: 1024px) {
@@ -66,8 +67,8 @@
   }
 
   .need-div a:hover {
-    color: white;
+    color: #fe4e5f;
     background-color: #171c28;
-    border: 2px solid white;
+    border: 2px solid #fe4e5f;
   }
 }

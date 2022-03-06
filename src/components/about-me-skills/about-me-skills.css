@@ -100,8 +100,8 @@
 
 .download-cv:active {
   background-color: #171c28;
-  color: white;
-  border: 2px solid white;
+  color: #fe4e5f;
+  border: 2px solid #fe4e5f;
 }
 
 @media screen and (min-width: 1024px) {
@@ -145,8 +145,8 @@
 
   .download-cv:hover {
     background-color: #171c28;
-    color: white;
-    border: 2px solid white;
+    color: #fe4e5f;
+    border: 2px solid #fe4e5f;
   }
 
   .skill-div:hover {
