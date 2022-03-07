@@ -5,13 +5,6 @@ import github from "./icons/github.svg";
 import whatsapp from "./icons/whatsapp.svg";
 
 export const Socials = () => {
-  const showLinkedin = () => {
-    swal({
-      text: "I'm working on my Linkedin profile. I will upload it as soon as posible. Sorry for the inconvenience",
-      icon: "warning",
-    });
-  };
-
   return (
     <section className="socials-section">
       <div className="socials-text-section">
@@ -26,7 +19,11 @@ export const Socials = () => {
         >
           <img className="social-img twitter" src={twitter} />
         </a>
-        <a className="social-btn" onClick={showLinkedin}>
+        <a
+          className="social-btn"
+          href="https://www.linkedin.com/in/renato-piermarini-106378232/"
+          target="_blank"
+        >
           <img className="social-img linkedin" src={linkedin} />
         </a>
         <a
