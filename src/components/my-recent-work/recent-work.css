@@ -133,6 +133,11 @@ import giphy from "./pictures/giphy.jpeg"; */
   background-size: cover;
 }
 
+.news {
+  background-image: url(./pictures/news.jpeg);
+  background-size: cover;
+}
+
 .senderos {
   background-image: url(./pictures/construcciones.jpeg);
   background-size: cover;

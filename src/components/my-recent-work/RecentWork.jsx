@@ -9,9 +9,14 @@ export const RecentWork = () => {
   const [isActiveJournal, setIsactiveJournal] = useState(false);
   const [isActiveHeros, setIsactiveHeros] = useState(false);
   const [isActiveGiphy, setIsactiveGiphy] = useState(false);
+  const [isActiveNews, setIsactiveNews] = useState(false);
 
   const toggleClassInmo = () => {
     setIsactiveInmo(!isActiveInmo);
+  };
+
+  const toggleClassNews = () => {
+    setIsactiveNews(!isActiveNews);
   };
 
   const toggleClassConst = () => {
@@ -97,6 +102,31 @@ export const RecentWork = () => {
             </a>
             <a
               href="https://github.com/renatopiermarini/senderos-construcciones/tree/main"
+              target="_blank"
+            >
+              <img src={github} />
+            </a>
+          </div>
+        </div>
+        <div className="project-div">
+          <label>News App</label>
+          <span />
+          <div
+            className={!isActiveInmo ? "project news" : "project-active"}
+            onClick={toggleClassNews}
+          >
+            <p>
+              This is a website I made with a public news api. It gives you the
+              latest news from different sources just by typing a word.
+            </p>
+          </div>
+
+          <div className="visit-code">
+            <a href="https://news-app-flax.vercel.app/" target="_blank">
+              <img src={visit} />
+            </a>
+            <a
+              href="https://github.com/renatopiermarini/news-app"
               target="_blank"
             >
               <img src={github} />
