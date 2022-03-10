@@ -112,7 +112,7 @@ export const RecentWork = () => {
           <label>News App</label>
           <span />
           <div
-            className={!isActiveInmo ? "project news" : "project-active"}
+            className={!isActiveNews ? "project news" : "project-active"}
             onClick={toggleClassNews}
           >
             <p>
